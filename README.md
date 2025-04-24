@@ -1,15 +1,19 @@
-# zerodha-mcp
+# Zerodha-MCP
 
-To install dependencies:
+This is a Model Context Protocol (MCP) server that provides a set of tools for interacting with the Zerodha exchange.
 
-```bash
-bun install
-```
 
-To run:
+Claude Desktop Configuration
+=============================
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.5. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To use this server with Claude Desktop, you need to add the following configuration to your `claude_desktop_config.json` file:
+{
+    "mcpServers": {
+        "trade": {
+            "command": "/Users/shubhanshuarya/.bun/bin/bun",
+            "args": [
+                Path to the index.ts file
+            ]
+        }
+    }
+}
